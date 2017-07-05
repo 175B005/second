@@ -29,7 +29,7 @@ game.physics.arcade.overlap(dude,stars,pickStar,null,this);
     /*dude.x = game.input.x;
     dude.y = game.input.y;*/
 
-    //マウスが押された時の処理
+    //マウスが押された時の処理...ポインタをタップにも対応
     if(game.input.mousePointer.isDown || game.input.pointer1.isDown){
         //目指す座標ー現在地　で基礎ベクトルを作る。→加算する。
 dude.x += (game.input.x - dude.x)/20;
